@@ -30,6 +30,7 @@ Product reviews and ratings should be displayed if available.
 Users should see available stock levels.
 
 Include an "Add to Cart" button on the product detail page. */
+
 app.get('/products/:id',(req, res) => {
     const id = req.params.id;
     fetch(`https://fakestoreapi.com/products/${id}`)
@@ -41,6 +42,7 @@ app.get('/products/:id',(req, res) => {
                 res.send(body);
             })
 });
+
 //app.addProduct('p1',3000,"some product",'https://i.pravatar.cc',"general").then(result => console.log(result));
 app.listen(port, ()=>{
     console.log(`server is listening on port ${port}`);
