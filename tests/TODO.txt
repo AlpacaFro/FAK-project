@@ -1,0 +1,6 @@
+QA LIST :
+Status code (post/get) for both tasks 
+get product by ID test 
+post product return json body test 
+
+
