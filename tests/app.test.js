@@ -16,6 +16,14 @@ describe('add', () => {
     });
 });
 
+describe('GET /products/:id', () => {
+    it('should have an id', async () => {
+        const response = await request(app).get('/products/1');
+        console.log(response);
+        expect(response._body.id).toBeDefined();
+    })
+});
+
 // describe('add', () => {
 //     test('return success', () => {
 //         expect(app.add()).toBe('success!');

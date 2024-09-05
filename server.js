@@ -33,12 +33,13 @@ Include an "Add to Cart" button on the product detail page. */
 
 app.get('/products/:id',(req, res) => {
     const id = req.params.id;
+    
     fetch(`https://fakestoreapi.com/products/${id}`)
             .then(response=>{
                 return response.json();
             })
             .then(body =>{
-                console.log(body);
+                // console.log(body);
                 res.send(body);
             })
 });
