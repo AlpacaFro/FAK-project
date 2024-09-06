@@ -39,7 +39,7 @@ app.get('/products/:id',(req, res) => {
                 return response.json();
             })
             .then(body =>{
-                // console.log(body);
+                console.log(body);
                 res.send(body);
             })
 });
