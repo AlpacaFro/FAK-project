@@ -1,18 +1,18 @@
 FAK-1 Manage products:
 https://techcareer833-1724738184666.atlassian.net/browse/FAK-1?atlOrigin=eyJpIjoiMzU1YzgyZDM0ZWY4NGY4MTgyYWM0NzFkNGJmMjlhM2YiLCJwIjoiaiJ9
 
-FAK-2 View product list
+FAK-2 View product list (main form)
 
-FAK-3 Search for a product
+FAK-3 Search for a product (navbar search bar)
 
-FAK-4 Filter products by  category and price range
+FAK-4 Filter products by  category and price range(navbar search bar)
 
-FAK-5 view product details
+FAK-5 view product details(product details form when clicking on product from main form)
 
-FAK-6 Add new product(Admin)
+FAK-6 Add new product(Admin) (option to login as admin and view the admin section)
 
-FAK-7 Edit existing product(Admin)
+FAK-7 Edit existing product(Admin)(product)
 
 FAK-8 Delete product(Admin)
 
-FAK-9 Product reviews and ratings
+FAK-9 Product reviews and ratings(rating and review submit form from product details form)
