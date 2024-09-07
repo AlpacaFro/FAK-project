@@ -15,12 +15,24 @@ app.addProduct = function (title, price, description, image, category){
                 category: category
             }
         )
-        })
+    })
 }
 
 app.get('/products/:id',(req, res) => {
     const id = req.params.id;    
     fetch(`https://fakestoreapi.com/products/${id}`)
+            .then(response=>{
+                return response.json();
+            })
+            .then(body =>{
+                console.log(body);
+                res.send(body);
+            })
+});
+
+app.get('/products',(req, res) => {
+    const id = req.params.id;    
+    fetch(`https://fakestoreapi.com/products`)
             .then(response=>{
                 return response.json();
             })
