@@ -9,13 +9,6 @@ describe('addProduct', () => {
     });
 });
 
-describe('add', () => {
-    it('should respond with "success!"', ()=>{
-        const response = app.add();
-        expect(response).toBe("success!");
-    });
-});
-
 describe('GET /products/:id', () => {
     it('should have an id', async () => {
         const response = await request(app).get('/products/1');
@@ -23,9 +16,3 @@ describe('GET /products/:id', () => {
         expect(response._body.id).toBeDefined();
     })
 });
-
-// describe('add', () => {
-//     test('return success', () => {
-//         expect(app.add()).toBe('success!');
-//     });
-// });
