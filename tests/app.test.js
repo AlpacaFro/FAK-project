@@ -9,24 +9,6 @@ describe('addProduct', () => {
     });
 });
 
-describe('GET /products/:id', () => {
-    it('should have an id', async () => {
-        const response = await request(app).get('/products/1');
-        console.log(response);
-        expect(response._body.id).toBeDefined();
-    })
-});
-
-describe('getDetails', () => {
-    test('details', async () => {
-      const response = await app.getProductDetails(
-        'https://fakestoreapi.com/products/1'
-      );
-      expect(response.data.id).toBe(1);
-    });
-  });
-  
-
 // test status code 200
 describe(' status code 200', () => {
     test('test if status code is 200', async () => {

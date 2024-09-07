@@ -17,22 +17,24 @@ app.getProductDetails = async (url) => {
     }
 };
 
-//app.addProduct('p1',3000,"some product",'https://i.pravatar.cc',"general").then(result => console.log(result));
 app.addProduct = function (title, price, description, image, category){
     return fetch('https://fakestoreapi.com/products',{
         method:"POST",
         body:JSON.stringify(
             {
-                title: title,
-                price: price,
-                description: description,
-                image: image,
-                category: category
+                title,
+                price,
+                description,
+                image,
+                category
             }
         )
     })
 }
-  
+app.addProduct('p1',3000,"some product",'https://i.pravatar.cc',"general")
+.then(result => result.json())
+.then(json => console.log(json));
+
 app.listen(port, ()=>{
     console.log(`server is listening on port ${port}`);
 });
