@@ -1,5 +1,5 @@
-QA LIST :
-Status code (post/get) for both tasks 
+TEST LIST :
+Status code (post/get) for both tasks  (check for 200 ,404 , ect...) 
 get product by ID test 
 post product return json body test 
 
