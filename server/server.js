@@ -1,5 +1,8 @@
 // add try/catch to fetching methods
 // add a routing file
+// test status codes 200 and 404(should try on purpose to create an error code)
+// test a certain products price
+
 const express = require('express');
 const app = express();
 const port = 3000;
